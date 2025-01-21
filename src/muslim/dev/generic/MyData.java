@@ -1,6 +1,19 @@
-public class MyData {
+package muslim.dev.generic;
 
-    public static void main(String[] args) {
+public class MyData<T> {
 
+    private T data;
+
+    public MyData(T data) {
+        this.data = data;
     }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
+
 }
